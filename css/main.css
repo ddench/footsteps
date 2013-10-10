@@ -1,0 +1,1009 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@media screen and (max-width: 700px) {
+	.manage_evidence {
+		background: blue;
+	}
+}
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	max-width:1024px;
+}
+.manage_evidence{
+	font-size:.8em;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/*==========================================================================
+	Chrome Frame prompt
+	========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/*==========================================================================
+	Author's custom styles
+	========================================================================== */
+	
+/*==========================================================================
+	@media CSS for mobile devices (and non maximised browser windows)
+	These should wrap pages to such as maangeevidence to two rows per 
+	piece of data and landing pages to have images one under the other. 
+	
+============================================================================*/
+
+
+body {
+	max-width:1024px;/*as opposed to 1280*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	-webkit-box-shadow: 0px 0px 8px 5px #d1d1d1;
+	-moz-box-shadow: 0px 0px 8px 5px #d1d1d1;
+	box-shadow: 0px 0px 8px 5px #d1d1d1;
+
+	/*border-left:outset #1e5799 5px;
+	border-right:inset #1e5799 5px;*/
+}
+
+header {
+	/*height: 80px;*/
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #207cca 50%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 50%, #7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* W3C */
+	border-bottom: solid #7db9e8 2px;
+	padding:5px;
+	
+}
+.footstepslogo{
+	float:left;
+	height: 40px;
+	width:40px;
+}
+
+
+.logoutlogo {
+	float:right;
+	height: 40px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.settingslogo {
+	float:right;
+	height: 40px;
+	margin-left:5px;
+}
+.helplogo {
+	float:right;
+	height: 40px;
+	margin-left:5px;
+}
+
+nav {
+	height:60px;
+	/*border-top:1px solid black;*/
+	background:#FFFFFF;
+	color:#000000;
+	-webkit-box-shadow: 0px 8px 10px -1px #d1d1d1;
+	-moz-box-shadow: 0px 8px 10px -1px #d1d1d1;
+	box-shadow: 0px 8px 10px -1px #d1d1d1; 
+}
+#nav2 {
+	border-top:1px solid black;
+	font-size:0.8em;
+}
+.mainbody {
+	min-height: 400px;
+}
+.helparea {
+	min-height:50px;
+	padding: 5px 5px 0px 5px;
+	background:#1e5799;
+	border-top:2px solid #000000;
+	border-bottom:2px solid #000000;
+	font-size:12px;
+	color:#000000;
+}
+.helptext {
+	/*padding:2px;*/
+	display:inline;
+	max-width:1080px;
+	margin-right:2.5px;
+}
+.helpareahelpicon {
+	float:right;
+	height: 40px;
+	margin-left: 2.5px;
+}
+.helpareasupporticon {
+	float:right;
+	height: 40px;
+	margin-left: 5px;
+}
+.placeholder{
+	float:left;
+	width:300px;
+	height:200px;
+	margin:15px 15px 15px 15px;
+}
+footer {
+	clear: both;
+	height: 80px;
+	box-shadow:0px -8px 10px -1px;
+	-webkit-box-shadow: 0px -8px 10px -1px #d1d1d1;
+	-moz-box-shadow: 0px -8px 10px -1px #d1d1d1;
+	/*background: -webkit-linear-gradient(top, #1e5799 0%, #0b1728 100%); /* Chrome10+,Safari5.1+ */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top, #207cca 0%, #1e5799 50%, #1e5799 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#207cca), color-stop(50%,#1e5799), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #207cca 0%,#1e5799 50%, #1e5799 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #207cca 0%,#1e5799 50%,#1e5799 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #207cca 0%,#1e5799 50%,#1e5799 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #207cca 0%,#1e5799 50%,#1e5799 100%); /* W3C */
+	
+/*	background:#0b1728;*/
+	color:#FFFFFF;
+	padding:5px;
+	font-size:10px;
+	line-height: .8em;
+}
+.copyright{
+	width:20%;
+	float:left;
+	border-right:#FFFFFF solid 1px;
+	padding:5px;
+	margin:5px;
+}
+.codetails{
+	width: 10%;
+	float: left;
+	border-right:#FFFFFF solid 1px;
+	padding: 5px;
+	margin:5px;
+}
+.links{
+	width: 10%;
+	float: left;
+	border-right:#FFFFFF solid 1px;
+	padding:5px;
+	margin:5px;
+}
+.oictlogo {
+	height:40px;
+	float:right;
+}
+/*=====================================================================
+	layoutmenu
+	=================================================================== */
+
+
+#layoutmenu ul,
+#layoutmenu li,
+#layoutmenu span,
+#layoutmenu a {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	margin-top:1px;
+}
+#layoutmenu:after,
+#layoutmenu ul:after {
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+#layoutmenu a {
+	color: #333333;
+	display: inline-block;
+	z-index: 9;
+
+}
+#layoutmenu ul {
+	list-style: none;
+}
+#layoutmenu > ul > li {
+	float: right;
+}
+#layoutmenu > ul > li.active a {
+	background: #d9d9d9 url(img/grad_light.png) repeat-x left bottom;
+	background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+	background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+	background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+	background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+	background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d9d9d9', endColorstr='#bfbfbf', GradientType=0);
+	box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+	-moz-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+	-webkit-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+	filter: none;
+}
+#layoutmenu > ul > li.active a:hover {
+  background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d9d9d9', endColorstr='#bfbfbf', GradientType=0);
+  filter: none;
+}
+#layoutmenu > ul > li a {
+  box-shadow: inset 0 0 0 1px #ffffff;
+  -moz-box-shadow: inset 0 0 0 1px #ffffff;
+  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
+  background: #bfbfbf url(images/grad_light.png) repeat-x left top;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #e5e5e5), color-stop(51%, #d7d7d7), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  border-bottom: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  padding: 6px;
+  filter: none;
+}
+#layoutmenu > ul > li a:hover {
+  background: #ffffff url(images/grad_light.png) repeat-x left bottom;
+  background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(50%, #bfbfbf), color-stop(51%, #b0b0b0), color-stop(100%, #c7c7c7));
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  filter: none;
+}
+#layoutmenu > ul > li:first-child a {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border-left: 1px solid #d2d2d2;
+
+}
+#layoutmenu > ul > li:last-child a {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 50px 50px 50px 50px ;
+
+}
+#layoutmenu .has-sub:hover ul {
+  display: block;
+
+}
+#layoutmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: -1px;
+  min-width: 100%;
+  text-align: center;
+  *width: 100%;
+
+}
+  
+}
+#layoutmenu .has-sub ul li a {
+  border-top: 0 none;
+  border-left: 1px solid #d2d2d2;
+  display: block;
+  padding: 1px 1px;
+}
+
+.layoutmenuimg{
+	height:25px;
+	width:25px;	
+}
+
+/*===========================================================================
+	Data Analysis table
+	=====================================================================*/
+#analysis_table {
+	margin:15px;
+	border:1px solid black;
+	font-size:0.95em;
+	padding:5px;
+	text-align:center;
+	vertical-align:middle;
+}
+.analysis_table_header{
+
+	height:100%;
+	overflow:hidden;
+}
+.pupil_header{
+	width:50px;
+	height:100%;
+	text-align:center;
+	vertical-align:middle;
+/*	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	*/
+}
+#analysis_table .td{
+	vertical-align:middle;
+}
+
+.manage_evidence{
+margin-top:15px;
+margin-bottom:15px;
+}
+/*===========================================================================
+	Breadcrumbs
+	========================================================================= */
+
+/* Float Clearing
+ ---------------------------------------------------------------------*/
+
+.module:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* float clearing for IE6 */
+* html .module
+{
+	height: 1%;
+	overflow: visible;
+}
+
+/* float clearing for IE7 */
+* + html .module
+{
+	min-height: 1%;
+}
+
+/* ---------------------------------------------------------------------
+	Float Clearing
+ ---------------------------------------------------------------------*/
+
+.module:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* float clearing for IE6 */
+* html .module
+{
+	height: 1%;
+	overflow: visible;
+}
+
+/* float clearing for IE7 */
+* + html .module
+{
+	min-height: 1%;
+}
+
+/* Breadcrumb Styles
+ ---------------------------------------------------------------------*/
+
+.breadCrumb
+{
+	margin: 5px 0 0 15px;
+	padding: 0;
+	float: left;
+	display: block;
+	height: 21px;
+	overflow: hidden;
+	width: 100%;
+	padding:5px;
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 0%, #bee4f8 50%, #b1d8f5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(50%,#bee4f8), color-stop(100%,#b1d8f5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7db9e8 0%,#bee4f8 50%, #b1d8f5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7db9e8 0%,#bee4f8 50%,#b1d8f5 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #7db9e8 0%,#bee4f8 50%,#b1d8f5 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#bee4f8',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #7db9e8 0%,#bee4f8 50%,#b1d8f5 100%); /* W3C */
+	/*border:solid 1px #dedede;
+	background:#fff;*/
+	 border-radius: 5px 50px 50px 5px;
+  -moz-border-radius: 5px 50px 50px 5px;
+  -webkit-border-radius: 10px 50px 50px 10px;
+  border-left: 1px solid #d2d2d2;
+
+}
+.breadCrumb ul
+{
+	margin: 0;
+	padding: 0;
+	height: 21px;
+	display: block;
+}
+.breadCrumb ul li
+{
+	display: block;
+	float: left;
+	position: relative;
+	height: 21px;
+	overflow: hidden;
+	line-height: 21px;
+	margin: 0px 6px 0px 0;
+	padding: 0px 10px 0px 0;
+	font-size: .9167em;
+	background: url(../img/Chevron.gif) no-repeat 100% 0;
+}
+.breadCrumb ul li div.chevronOverlay
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.breadCrumb ul li span
+{
+	display: block;
+	overflow: hidden;
+}
+.breadCrumb ul li a
+{
+	display: block;
+	position: relative;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	float: left;
+}
+.breadCrumb ul li.first a
+{
+	height: 16px !important;
+	text-indent:-1000em;
+	width:16px;
+	padding: 0;
+	margin-top: 2px;
+	overflow: hidden;
+	background:url(../img/IconHome.gif) no-repeat 0 0;
+}
+.breadCrumb ul li.first a:hover
+{
+	background-position: 0 -16px;
+}
+.breadCrumb ul li.last
+{
+	background: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+.chevronOverlay
+{
+	display: none;
+	background: url(../img/ChevronOverlay.png) no-repeat 100% 0;
+	width: 13px;
+	height: 20px;
+}
+/*===========================================================================
+	Selectable List items
+	========================================================================= */
+#selectable .ui-selecting
+{
+background: #FECA40;
+}
+#selectable .ui-selected
+{
+background: #0CC91F;
+color: white;
+}
+#selectable
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+#selectable li
+{
+/*margin: 3px;
+font-size: 0.8em;*/
+padding: 0.2em;
+}
+.epc_list_head
+{
+font-size:1em;
+font-weight:bold;
+background-color:#FFE202;
+}
+.epc_list_sub
+{
+font-size: 0.8em;
+margin-left:10px;
+font-style:italic;
+text-decoration:underline;
+}
+.epc_list_sub_sub
+{
+margin-left:20px;
+}
+.epc_list_age
+{
+background-color:#00ADEF;
+font-size: 0.8em;
+font-weight:bold;
+margin-left:30px;
+}
+.epc_list_statement
+{
+font-size: 0.8em;
+margin-left:40px;
+}
+.epc_list_elg
+{
+margin-left:30px;
+border: 2px solid #0CC91F;
+}
+.epc_list_statement_sub
+{
+font-size: 0.8em;
+margin-left:50px;
+font-weight:bold;
+}
+/*===========================================================================
+	Login box
+	========================================================================= */
+
+.link { text-align: center; clear: both; padding: 20px 0; }
+.link a { color: #333333; }
+
+/*.wrapper {
+	width: 960px;
+	margin: 50px auto;
+}*/
+
+
+/* Form 1 style */
+
+.form1 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	width: 450px;
+	/*float: left;*/
+	background: #fff;
+	color: #777;
+	-webkit-box-shadow: 0px 0px 8px 2px #d1d1d1;
+	-moz-box-shadow: 0px 0px 8px 2px #d1d1d1;
+	box-shadow: 0px 0px 8px 2px #d1d1d1; 
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px; 
+	overflow: hidden;
+}
+
+.formtitle {
+	padding: 10px;
+	line-height: 16px;
+	font-size: 13px;
+	text-shadow: -1px -1px #7db9e8;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px solid #00aeef;
+	width: 430px;
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #207cca 50%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#207cca 50%, #7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #1e5799 0%,#207cca 50%,#7db9e8 100%); /* W3C */
+}
+
+.input {
+	width: 410px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.inputtext {
+	float: left;
+	line-height: 18px;
+	height: 35px;
+	font-size: 14px;
+	width: 120px;
+}
+
+.inputcontent {
+	float: left;
+	width: 290px;
+	height: 50px;
+}
+
+.inputcontent input {
+	padding: 5px;
+	height: 18px;
+	width: 200px;
+	line-height: 18px;
+	border: 1px solid #c7c7c7;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color: #777;
+}
+
+.inputcontent a {
+	color: #0084ff;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 12px;
+}
+
+.nobottomborder {
+	border-bottom: 0;
+}
+
+.buttons {
+	background: #f1f1f1;
+	border-top: 1px solid #ddd;
+	padding: 15px;
+	height: 34px;
+}
+
+.greybutton {
+	background: #e1e1e1; /* Old browsers */
+	background: -moz-linear-gradient(top, #e1e1e1 0%, #bababa 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(100%,#bababa)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e1e1e1 0%,#bababa 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e1e1e1 0%,#bababa 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #e1e1e1 0%,#bababa 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#bababa',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #e1e1e1 0%,#bababa 100%); /* W3C */ 
+	border: 1px solid #bababa;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px; 
+	line-height: 20px;
+	font-size: 16px;
+	padding: 6px 12px;
+	color: #fff;
+	text-shadow: -1px -1px #bababa;
+	float: right;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.greybutton:hover{
+	background: #bababa; /* Old browsers */
+	background: -moz-linear-gradient(top, #bababa 0%, #e1e1e1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #bababa 0%,#e1e1e1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #bababa 0%,#e1e1e1 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #bababa 0%,#e1e1e1 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #bababa 0%,#e1e1e1 100%); /* W3C */ 
+}
+
+.orangebutton {
+	background: #207cca; /* Old browsers */
+	background: -moz-linear-gradient(top, #207cca 0%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #207cca 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #207cca 0%,#7db9e8 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #207cca 0%,#7db9e8 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #207cca 0%,#7db9e8 100%); /* W3C */
+	border: 1px solid #7db9e8;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px; 
+	line-height: 20px;
+	font-size: 16px;
+	padding: 6px 12px;
+	color: #fff;
+	text-shadow: -1px -1px #7db9e8;
+	float: right;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.orangebutton:hover{
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* W3C */
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

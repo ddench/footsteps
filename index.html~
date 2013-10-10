@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<?php include"php/includes/templates/includeheadtags.php";?>
+<?php include"php/includes/templates/includeheadscripts.php";?>
+<script>
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+  </script>
+
+ <script>
+  $(function() {
+    $( "#menu" ).menu();
+  });
+  </script>
+  <style>
+  .ui-menu { width: 50px; }
+  </style>
+
+
+
+  <!--
+<script>
+	jQuery(document).ready(function()
+{
+	jQuery("#breadCrumb").jBreadCrumb();
+})	
+</script> -->
+
+  
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<nav id="layoutmenu" style="width:1270px" class="header">
+<!--<header style="display:inline-block; width:1270px;" class="header">-->
+<img class="footstepslogo" src="img/footstepslogo.png"/>
+  <div class="breadCrumbHolder module">
+                 <div  id="breadCrumb" class="breadCrumb module">
+                    <ul class="breadCrumb module">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Biocompare Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Product Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#">Life Science Products / Laboratory Supplies</a>
+                        </li>
+                        <li>
+                            <a href="#">Kits and Assays</a>
+                        </li>
+                    </ul>
+             </div>
+          </div>	
+<div style='float:right;'
+<a href="logout.php"><img class="logoutlogo" src="img/symbollogout.png"/></a>
+<img class="helplogo" id="opener" src="img/symbolhelp.png"/>
+<img class="settingslogo" src="img/settings.png" />
+
+<!--<ul id="menu">
+	
+  <li>
+    <a href="#">Playback</a>
+    <ul>
+      <li><a href="#"><span class="ui-icon ui-icon-seek-start"></span>Prev</a></li>
+      <li><a href="#"><span class="ui-icon ui-icon-stop"></span>Stop</a></li>
+      <li><a href="#"><span class="ui-icon ui-icon-play"></span>Play</a></li>
+      <li><a href="#"><span class="ui-icon ui-icon-seek-end"></span>Next</a></li>
+    </ul>
+  </li>
+</ul>-->
+
+<ul >
+   <li class='has-sub'><a href="#"><img class="layoutmenuimg" src="img/gridview.png"/></a>
+      <ul>
+         <li><a href="#"><img class="layoutmenuimg" src="img/listview.png"/></a></li>
+         <li><a href="#"><img class="layoutmenuimg" src="img/coverflow.png"/></a></li>
+      </ul>
+   </li>
+</ul>
+</div>
+</nav>
+
+<nav class="nav">
+
+
+
+</nav>
+<section class="mainbody">
+	<div class="wrapper">
+		<form class="form1" action="login.php" method="post">
+			<div class="formtitle">Log-in to Footsteps</div>
+			<div class="input">
+				<div class="inputtext">Username: </div>
+				<div class="inputcontent">
+					<input type="text" name="username" required="required" placeholder="Enter your username here"/>
+				</div>
+			</div>
+			<div class="input nobottomborder">
+				<div class="inputtext">Password: </div>
+				<div class="inputcontent">
+					<input type="password" name="password" required="required" placeholder="Enter your password here"/>
+					<br/><a href="#">Forgot password?</a>
+				</div>
+			</div>
+			<div class="buttons">
+				<input class="orangebutton" type="submit" value="Login" />
+				<input class="greybutton" type="submit" value="Cancel" />
+			</div>
+		</form>
+	</div>			
+	</section>    
+<footer class="footer">
+	<div>
+		<a href="http://www.openict.co"><img class="oictlogo" src="img/oictlogo.png"/></a>
+		<div class="copyright">(c)OpenICT Ltd. 2011 - 2013 <br></br>Footsteps Pupil Assessment and tracking software<br></br><br></br><br></br></div>
+		<div class="codetails">OpenICT Ltd <br></br>Company No: 9999999 <br></br>VAT Reg No 12345678<br></br><br></br></div>
+		<div class="links">Contact Us <br></br>Privacy <br></br>Legal <br></br>About<br></br></div>
+	</div>
+</footer>    
+
+        <div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div> 	
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+ 
+    </body>
+</html>

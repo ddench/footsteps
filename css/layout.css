@@ -1,0 +1,124 @@
+
+#layoutmenu ul,
+#layoutmenu li,
+#layoutmenu span,
+#layoutmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+margin-top:1px;
+}
+#layoutmenu:after,
+#layoutmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+#layoutmenu a {
+  color: #333333;
+  display: inline-block;
+  	z-index: 9;
+
+}
+#layoutmenu ul {
+  list-style: none;
+}
+#layoutmenu > ul > li {
+  float: right;
+}
+#layoutmenu > ul > li.active a {
+  background: #d9d9d9 url(img/grad_light.png) repeat-x left bottom;
+  background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d9d9d9', endColorstr='#bfbfbf', GradientType=0);
+  box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+  -moz-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+  -webkit-box-shadow: inset 0 0 10px #979797, inset 0 10px 10px #979797;
+  filter: none;
+
+}
+#layoutmenu > ul > li.active a:hover {
+  background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(100%, #bfbfbf));
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d9d9d9', endColorstr='#bfbfbf', GradientType=0);
+  filter: none;
+}
+#layoutmenu > ul > li a {
+  box-shadow: inset 0 0 0 1px #ffffff;
+  -moz-box-shadow: inset 0 0 0 1px #ffffff;
+  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
+  background: #bfbfbf url(images/grad_light.png) repeat-x left top;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #e5e5e5), color-stop(51%, #d7d7d7), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  border-bottom: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  padding: 6px;
+  filter: none;
+}
+#layoutmenu > ul > li a:hover {
+  background: #ffffff url(images/grad_light.png) repeat-x left bottom;
+  background: -moz-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9d9d9), color-stop(50%, #bfbfbf), color-stop(51%, #b0b0b0), color-stop(100%, #c7c7c7));
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -o-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: -ms-linear-gradient(top, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  filter: none;
+}
+#layoutmenu > ul > li:first-child a {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border-left: 1px solid #d2d2d2;
+
+}
+#layoutmenu > ul > li:last-child a {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 50px 50px 50px 50px ;
+
+}
+#layoutmenu .has-sub:hover ul {
+  display: block;
+
+}
+#layoutmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: -1px;
+  min-width: 100%;
+  text-align: center;
+  *width: 100%;
+
+}
+  
+}
+#layoutmenu .has-sub ul li a {
+  border-top: 0 none;
+  border-left: 1px solid #d2d2d2;
+  display: block;
+  padding: 1px 1px;
+}
+
+.layoutmenuimg{
+	height:25px;
+	width:25px;	
+}

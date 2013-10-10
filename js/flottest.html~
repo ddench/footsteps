@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Footsteps Template</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+	<link href="examples.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="footsteps/js/jquery-ui/css/cupertino/jquery-ui-1.10.2.custom.min.css" />
+
+		<script language="javascript" type="text/javascript" src="/nsxa/js/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/flot/jquery.flot.js"></script>
+
+		<link rel="stylesheet" href="../css/main.css"/>
+
+<!--<script type="text/javascript">
+$(function(){
+var DataSet1=[1,3,4];
+var DataSet2=[5,6,7];
+var DataSet3=[18,2.5,12];
+$.plot("#placeholder", [DataSet1,DataSet2,DataSet3]);
+$("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+});
+
+</script>-->
+	<script type="text/javascript">
+
+	$(function() {
+
+		var d1 = [];
+		for (var i = 0; i < 14; i += 0.5) {
+			d1.push([i, Math.sin(i)]);
+		}
+
+		var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+		// A null signifies separate line segments
+
+		var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+
+		$.plot("#placeholder", [ d1, d2, d3 ]);
+
+		// Add the Flot version string to the footer
+
+		$("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+	});
+
+	</script>
+	</head>
+	<body>
+		<section class="mainbody">
+		<div class="wrapper">
+		<br>This is a placeholder for the flot chart</br>
+			<div id="placeholder" class="demo-placeholder" style="width:600px;height:400px"></div>
+		</div>
+		</section>
+		<footer id="footer">
+		</footer>
+	</body>
+</html>

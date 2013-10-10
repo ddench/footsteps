@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>		<html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Footsteps Template</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="stylesheet" type="text/css" href="/nsxa/css/flotexamples.css"/>
+		<link rel="stylesheet" type="text/css" href="/nsxa/css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="/nsxa/js/jquery-ui/css/cupertino/jquery-ui-1.10.2.custom.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/nsxa/css/main.css"/>
+<!--
+		<link rel="stylesheet" type="text/css" href="/nsxa/js/jBreadCrumb/Styles/BreadCrumb.css"/>
+		<link rel="stylesheet" type="text/css" href="/nsxa/js/jBreadCrumb/Styles/Base.css"/>
+-->
+
+		<script language="javascript" type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/vendor/modernizr-2.6.2.min.js"></script>
+<!--
+		<script language="javascript" type="text/javascript" src="/nsxa/js/jBreadCrumb/js/jquery.jBreadCrumb.1.1.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/jBreadCrumb/js/jquery.js"></script>
+-->
+		<script language="javascript" type="text/javascript" src="/nsxa/js/flot/jquery.flot.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/flot/jquery.flot.pie.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/plugins.js"></script>
+		<script language="javascript" type="text/javascript" src="/nsxa/js/main.js"></script>
+
+		<script>
+			window.jQuery || 
+			document.write('<script src="footsteps/js/jquery-ui/js/jquery-1.10.2.min.js"><\/script>')
+		</script>
+
+<!--<script>
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+</script>
+
+<script>
+  $(function() {
+    $( "#menu" ).menu();
+  });
+</script>
+<style>
+  .ui-menu { width: 50px; }
+</style>-->
+
+		<script type="text/javascript">
+			$(function(){
+				var DataSet1=[
+					{label: "Series1", data: 10},
+					{label: "Series2", data: 30},
+					{label: "Series3", data: 90},
+					{label: "Series4", data: 70},
+					{label: "Series5", data: 80},
+					{label: "Series6", data: 80}
+				];
+				var options = {
+					series: {
+						pie: {show: true}
+					}
+				};
+				$.plot($("#placeholdera"), DataSet1, options);
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+				var d1 = [];
+				for (var i = 0; i < 14; i += 0.5) {
+					d1.push([i, Math.sin(i)]);
+				}
+				var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+				// A null signifies separate line segments
+				var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+				$.plot("#placeholderb", [ d1, d2, d3 ]);
+			});
+		</script>
+
+<!--
+<script>
+	jQuery(document).ready(function()
+{
+	jQuery("#breadCrumb").jBreadCrumb();
+})	
+</script> -->
+
+	</head>
+	<body>
+	<!-- Add your site or application content here -->
+		<nav id="layoutmenu" class="header">
+		<!--<header style="display:inline-block; width:1270px;" class="header">-->
+		<div style="float:left;">
+			<a href="landing.php"> <img class="footstepslogo" src="img/footstepslogo.png"/></a>
+<!--				<div class="breadCrumbHolder module">
+					<div  id="breadCrumb" class="breadCrumb module">
+						<ul class="breadCrumb module">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Biocompare Home</a></li>
+							<li><a href="#">Product Discovery</a></li>
+							<li><a href="#">Life Science Products / Laboratory Supplies</a></li>
+							<li><a href="#">Kits and Assays</a></li>
+						</ul>
+					</div>
+					
+				</div>
+-->
+		</div>
+			<div style='float:right;'>
+<!--
+				<ul>
+					<li class='has-sub'><a href="#"><img class="layoutmenuimg" src="img/gridview.png"/></a>
+						<ul>
+						<li><a href="#"><img class="layoutmenuimg" src="img/listview.png"/></a></li>
+						<li><a href="#"><img class="layoutmenuimg" src="img/coverflow.png"/></a></li>
+						</ul>
+					</li>
+				</ul>
+-->
+			<a href="#"><img class="helplogo" id="opener" src="img/symbolhelp.png"/></a>
+			<a href="#"><img class="settingslogo" src="img/settings.png" /></a>
+			<a href="logout.php"><img class="logoutlogo" src="img/symbollogout.png"/></a>
+			</div>
+		</nav>
+		<nav class="nav">
+		</nav>
+		<section class="mainbody">
+			<div class="wrapper">
+			<br/>
+			<br/>
+				<div id="placeholdera" class="demo-placeholder" style="width:600px;height:400px"></div>
+				<br/>
+				<br/>
+				<div id="placeholderb" class="demo-placeholder" style="width:600px;height:400px"></div>
+			</div>
+		</section>
+		<footer id ="footer" class="footer">
+			<div>
+			<a href="http://www.openict.co"><img class="oictlogo" src="img/oictlogo.png"/></a>
+				<div class="copyright">(c)OpenICT Ltd. 2011 - 2013 <br></br>Footsteps Pupil Assessment and tracking software<br></br><br></br><br></br></div>
+				<div class="codetails">OpenICT Ltd <br></br>Company No: 9999999 <br></br>VAT Reg No 12345678<br></br><br></br></div>
+				<div class="links">Contact Us <br></br>Privacy <br></br>Legal <br></br>About<br></br></div>
+			</div>
+		</footer>
+		<div id="dialog" title="Basic dialog">
+			<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+		</div>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
+</html>
