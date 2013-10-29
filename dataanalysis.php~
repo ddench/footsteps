@@ -19,5 +19,7 @@
 		<footer class="footer">
 			<?php include"php/includes/templates/includefooter.php";?>
 		</footer>
+		<?php include"php/includes/templates/includehelpdialog.php";?>
+		<?php include"php/includes/templates/includefootscripts.php";?>
 	</body>
 </html>

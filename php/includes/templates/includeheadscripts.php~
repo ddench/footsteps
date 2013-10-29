@@ -63,16 +63,6 @@
 	});
 </script>
 <script>
-function changeBg(idLayer){
-idLayer_n = document.getElementById(idLayer);
-if(idLayer_n.style.background!=''){
-document.getElementById(idLayer).style.background ='#dedede';
-} else {
-document.getElementById(idLayer).style.background ='';
-}
-}
-</script>
-<script>
 var accept = document.getElementByID("manage_evidence" ).style.background='#007c09';//document.getElementById( 'manage_evidence_list_item' );
 	accept.onclick = function() {
 	if (this.('background') == '#007c09'||'#ff0000'
@@ -122,4 +112,4 @@ $(".accordion").accordion({ collapsible: true, heightStyle: "content", header: "
 	jQuery("#breadCrumb").jBreadCrumb();
 })	
 </script>-->
-
+"include mysqlconnect.php"

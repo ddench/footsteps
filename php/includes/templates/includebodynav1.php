@@ -1,4 +1,4 @@
-		<div id="main_nav_left" class="" style="float:left;margin-top:5px;margin-left:5px;">
+			<div id="main_nav_left" class="" style="float:left;margin-top:5px;margin-left:5px;">
 			<div style="float:left;">
 			<a href="landing.php"> <img class="footstepslogo" src="img/footstepslogo.png"/></a>
 			</div>

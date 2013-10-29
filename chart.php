@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<?php include"php/includes/templates/mysqlconnect.php";?>
 		<?php include"php/includes/templates/includeheadtags.php";?>
-		<?php include"php/includes/templates/includeheadscripts.php";?>
 		<?php include"php/includes/templates/includeheadscriptschart.php";?>
+		<?php include"php/includes/templates/includeheadscripts.php";?>
 	</head>
 	<body>
 		<nav id="layoutmenu" class="header">
